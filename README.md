@@ -1,0 +1,2 @@
+# LoRaHALL
+ Sensor magnético LoRa
