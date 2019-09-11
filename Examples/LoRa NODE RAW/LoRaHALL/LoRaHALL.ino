@@ -44,8 +44,8 @@
 #include <PinChangeInt.h>
 
 // Defines what sensors are available in the hardware...
-#define DS18B20
-#define LDR10K
+//#define DS18B20
+//#define LDR10K
 //#define PIR
 
 // Structure of default configuration parameters. This parameters are stored in internal eeprom...
@@ -243,7 +243,7 @@ void hall_int(void){
   // Turn of test led...
   led_test_off();  
 
-  attachInterrupt(digitalPinToInterrupt(HALL_INT), hall_int, FALLING);
+  attachInterrupt(digitalPinToInterrupt(HALL_INT), hall_int, CHANGE);
 }
 
 void lee_sensores(void){ 
